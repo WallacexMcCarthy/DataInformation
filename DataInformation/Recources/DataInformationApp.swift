@@ -8,9 +8,12 @@
 import SwiftUI
 
 @main
-struct DataInformationApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct DataInformationApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
             DataView()
         }
     }
