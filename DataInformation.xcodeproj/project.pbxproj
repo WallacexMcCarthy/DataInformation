@@ -48,7 +48,7 @@
 		940458E128F869CA0046625F /* CustomPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
 		941497AE28F5A8760034B090 /* DataInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941497B128F5A8760034B090 /* DataInformationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationApp.swift; sourceTree = "<group>"; };
-		941497B328F5A8760034B090 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		941497B328F5A8760034B090 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataView.swift; path = BucketViews/DataView.swift; sourceTree = "<group>"; };
 		941497B528F5A8770034B090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941497B828F5A8770034B090 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		941497BE28F5A8770034B090 /* DataInformationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataInformationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +98,9 @@
 		940458DA28F8689D0046625F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				940458DC28F868BC0046625F /* InformationViews */,
 				940458DB28F868A80046625F /* BucketViews */,
+				940458DC28F868BC0046625F /* InformationViews */,
+				941497B328F5A8760034B090 /* DataView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -107,7 +108,6 @@
 		940458DB28F868A80046625F /* BucketViews */ = {
 			isa = PBXGroup;
 			children = (
-				941497B328F5A8760034B090 /* DataView.swift */,
 				940458DD28F868F80046625F /* BucketRowView.swift */,
 				940458DF28F869330046625F /* BucketDetailView.swift */,
 			);

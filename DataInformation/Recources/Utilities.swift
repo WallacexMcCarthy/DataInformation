@@ -30,7 +30,7 @@ func generateRandomEmoji (of emojiType: String) -> String
     }else
     {
         start = 0x1F3C1
-        range = 268
+        range = 68
     }
     
     let unicodeValue = start + Int(arc4random_uniform(UInt32(range)))
