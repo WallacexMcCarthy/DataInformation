@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BucketDetailView: View
 {
+    var detailBucket : BucketListItem
     var body: some View
     {
         ZStack
@@ -17,9 +18,13 @@ struct BucketDetailView: View
                 .ignoresSafeArea(.all)
             VStack
             {
+                Text("Year: \(detailBucket.year)")
                 Image("IkeaBucket")
-                Text("Hello World")
-                Text("Placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                Text(detailBucket.creature)
+                Text(detailBucket.goal)
+                
             }
         }
     }
@@ -27,6 +32,6 @@ struct BucketDetailView: View
 
 struct BucketDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BucketDetailView()
+        BucketDetailView(detailBucket: demoBucket)
     }
 }
