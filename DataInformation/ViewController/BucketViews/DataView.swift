@@ -13,7 +13,7 @@ struct DataView: View
     {
         NavigationView
         {
-            List
+            Form
             {
                 Section(header: Text("Buckets"))
                 {
