@@ -18,10 +18,10 @@
 		941497C328F5A8770034B090 /* DataInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941497C228F5A8770034B090 /* DataInformationTests.swift */; };
 		941497CD28F5A8780034B090 /* DataInformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941497CC28F5A8780034B090 /* DataInformationUITests.swift */; };
 		941497CF28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941497CE28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift */; };
+		9456791529004FA800F06CBD /* schoolScores (1).json in Resources */ = {isa = PBXBuildFile; fileRef = 9456791429004FA800F06CBD /* schoolScores (1).json */; };
+		945679172900509700F06CBD /* SchoolScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945679162900509700F06CBD /* SchoolScores.swift */; };
 		949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E097D28FD95AD00BC3C34 /* Utilities.swift */; };
-		94D9D89228F8636B00904C0F /* injuries.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D9D89128F8636B00904C0F /* injuries.json */; };
 		94D9D89428F8637000904C0F /* school_scores.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D9D89328F8637000904C0F /* school_scores.json */; };
-		94D9D89628F8637500904C0F /* graduates.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D9D89528F8637500904C0F /* graduates.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		941497C828F5A8770034B090 /* DataInformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataInformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		941497CC28F5A8780034B090 /* DataInformationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationUITests.swift; sourceTree = "<group>"; };
 		941497CE28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9456791429004FA800F06CBD /* schoolScores (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schoolScores (1).json"; sourceTree = "<group>"; };
+		945679162900509700F06CBD /* SchoolScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScores.swift; sourceTree = "<group>"; };
 		949E097D28FD95AD00BC3C34 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		94D9D89128F8636B00904C0F /* injuries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = injuries.json; sourceTree = "<group>"; };
 		94D9D89328F8637000904C0F /* school_scores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_scores.json; sourceTree = "<group>"; };
-		94D9D89528F8637500904C0F /* graduates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = graduates.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				940458D828F867670046625F /* BucketList.swift */,
+				945679162900509700F06CBD /* SchoolScores.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,9 +193,8 @@
 		94D9D88628F8573E00904C0F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				94D9D89528F8637500904C0F /* graduates.json */,
+				9456791429004FA800F06CBD /* schoolScores (1).json */,
 				94D9D89328F8637000904C0F /* school_scores.json */,
-				94D9D89128F8636B00904C0F /* injuries.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -304,9 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D9D89428F8637000904C0F /* school_scores.json in Resources */,
-				94D9D89228F8636B00904C0F /* injuries.json in Resources */,
 				941497B928F5A8770034B090 /* Preview Assets.xcassets in Resources */,
-				94D9D89628F8637500904C0F /* graduates.json in Resources */,
+				9456791529004FA800F06CBD /* schoolScores (1).json in Resources */,
 				941497B628F5A8770034B090 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +335,7 @@
 				941497B428F5A8760034B090 /* DataView.swift in Sources */,
 				949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */,
 				941497B228F5A8760034B090 /* DataInformationApp.swift in Sources */,
+				945679172900509700F06CBD /* SchoolScores.swift in Sources */,
 				940458D928F867670046625F /* BucketList.swift in Sources */,
 				940458DE28F868F80046625F /* BucketRowView.swift in Sources */,
 				940458E028F869330046625F /* BucketDetailView.swift in Sources */,
