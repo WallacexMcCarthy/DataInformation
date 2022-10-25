@@ -19,6 +19,8 @@
 		941497CD28F5A8780034B090 /* DataInformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941497CC28F5A8780034B090 /* DataInformationUITests.swift */; };
 		941497CF28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941497CE28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift */; };
 		94435B9A2908295D0037B43B /* SchoolScoresDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94435B992908295C0037B43B /* SchoolScoresDetailView.swift */; };
+		94435B9C2908332F0037B43B /* SchoolScoresRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94435B9B2908332F0037B43B /* SchoolScoresRowView.swift */; };
+		94435B9E290836910037B43B /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94435B9D290836910037B43B /* BucketDataStore.swift */; };
 		9456791529004FA800F06CBD /* schoolScores (1).json in Resources */ = {isa = PBXBuildFile; fileRef = 9456791429004FA800F06CBD /* schoolScores (1).json */; };
 		945679172900509700F06CBD /* SchoolScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945679162900509700F06CBD /* SchoolScores.swift */; };
 		949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E097D28FD95AD00BC3C34 /* Utilities.swift */; };
@@ -58,6 +60,8 @@
 		941497CC28F5A8780034B090 /* DataInformationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationUITests.swift; sourceTree = "<group>"; };
 		941497CE28F5A8780034B090 /* DataInformationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94435B992908295C0037B43B /* SchoolScoresDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScoresDetailView.swift; sourceTree = "<group>"; };
+		94435B9B2908332F0037B43B /* SchoolScoresRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScoresRowView.swift; sourceTree = "<group>"; };
+		94435B9D290836910037B43B /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
 		9456791429004FA800F06CBD /* schoolScores (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schoolScores (1).json"; sourceTree = "<group>"; };
 		945679162900509700F06CBD /* SchoolScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScores.swift; sourceTree = "<group>"; };
 		949E097D28FD95AD00BC3C34 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			children = (
 				940458D828F867670046625F /* BucketList.swift */,
 				945679162900509700F06CBD /* SchoolScores.swift */,
+				94435B9D290836910037B43B /* BucketDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				940458DC28F868BC0046625F /* InformationViews */,
 				941497B328F5A8760034B090 /* DataView.swift */,
 				94435B992908295C0037B43B /* SchoolScoresDetailView.swift */,
+				94435B9B2908332F0037B43B /* SchoolScoresRowView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -336,12 +342,14 @@
 			files = (
 				940458E228F869CA0046625F /* CustomPDFView.swift in Sources */,
 				941497B428F5A8760034B090 /* DataView.swift in Sources */,
+				94435B9E290836910037B43B /* BucketDataStore.swift in Sources */,
 				949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */,
 				941497B228F5A8760034B090 /* DataInformationApp.swift in Sources */,
 				945679172900509700F06CBD /* SchoolScores.swift in Sources */,
 				940458D928F867670046625F /* BucketList.swift in Sources */,
 				940458DE28F868F80046625F /* BucketRowView.swift in Sources */,
 				940458E028F869330046625F /* BucketDetailView.swift in Sources */,
+				94435B9C2908332F0037B43B /* SchoolScoresRowView.swift in Sources */,
 				94435B9A2908295D0037B43B /* SchoolScoresDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

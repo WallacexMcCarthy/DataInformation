@@ -19,11 +19,17 @@ struct BucketDetailView: View
             VStack
             {
                 Text("Year: \(detailBucket.year)")
+                    .accessibilityLabel("detailBucket year")
+//                    .accessibilityValue(detailBucket.year)
                 Image("IkeaBucket")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 Text(detailBucket.creature)
+                    .accessibilityLabel("detailBucket creature")
+                    .accessibilityValue(detailBucket.creature)
                 Text(detailBucket.goal)
+                    .accessibilityLabel("detailBucket goal")
+                    .accessibilityValue(detailBucket.goal)
                 
             }
         }
