@@ -8,6 +8,7 @@
 import Foundation
 
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Take over the world, Narf!!", creature: "Ikea Bucket Hat")
+let demoSchoolScores : SchoolScrores = SchoolScrores(State: "Utah", totalTestTakers: 1_000, preformingArtsGPA: 3.31, englishGPA: 3.65, forignLanguageGPA: 3.69, mathematicsGPA: 3.92, naturalSciencesGPA: 3.87, socialSciencesGPA: 3.62, femaleTestTakers: 450, maleTestTakers: 550)
 
 let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
 let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")!

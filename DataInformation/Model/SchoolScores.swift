@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct schoolScrores: Codable
+struct SchoolScrores: Codable
 {
     var State : String
     var totalTestTakers : Int
     var preformingArtsGPA : Double
-    var englihsGPA : Double
+    var englishGPA : Double
     var forignLanguageGPA : Double
     var mathematicsGPA : Double
     var naturalSciencesGPA : Double
