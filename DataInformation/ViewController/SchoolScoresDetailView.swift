@@ -52,7 +52,7 @@ struct SchoolScoresDetailView: View
                         .accessibilityLabel("Average Social Sciences GPA")
                         .accessibilityValue("Average Social Sciences GPA: \(detailedSchoolScores.socialSciencesGPA)")
                 }
-        }
+            }
         }
     }
 }
