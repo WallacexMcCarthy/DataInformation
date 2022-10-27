@@ -9,6 +9,10 @@ import SwiftUI
 
 struct DataView: View
 {
+    
+    @ObservedObject var storedBuckets : BucketDataStore =
+                                        BucketDataStore(buckets: loadJSON(from: "Bucket2022") as! [BucketListItem])
+    
     var body: some View
     {
         NavigationView
