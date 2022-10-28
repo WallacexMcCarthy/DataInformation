@@ -12,21 +12,24 @@ struct SchoolScoresRowView: View
     var rowSchoolScores : SchoolScrores
     var body: some View
     {
-        HStack
+        NavigationLink(destination: SchoolScoresDetailView(detailedSchoolScores: rowSchoolScores))
         {
-            Text(generateRandomEmoji(of:""))
-                .padding()
-                .accessibilityLabel("A random emoji")
-                .accessibilityValue(generateRandomEmoji(of:""))
-            VStack
+            HStack
             {
-                Text(rowSchoolScores.State)
-                    .accessibilityLabel("The State")
-                    .accessibilityLabel(rowSchoolScores.State)
-                Text("\(rowSchoolScores.totalTestTakers)")
-                    .accessibilityLabel("Total Test takers")
-                    .accessibilityValue("\(rowSchoolScores.totalTestTakers)")
-            }
+                Text(generateRandomEmoji(of:"Symbol"))
+                    .padding()
+                    .accessibilityLabel("A random emoji")
+                    .accessibilityValue(generateRandomEmoji(of:""))
+                VStack
+                {
+                    Text(rowSchoolScores.State)
+                        .accessibilityLabel("The State")
+                        .accessibilityLabel(rowSchoolScores.State)
+                    Text("\(rowSchoolScores.totalTestTakers)")
+                        .accessibilityLabel("Total Test takers")
+                        .accessibilityValue("\(rowSchoolScores.totalTestTakers)")
+                }
+        }
         }
     }
 }

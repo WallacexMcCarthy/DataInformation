@@ -77,7 +77,7 @@ func loadJSON (from file: String) -> [Any]
         let decoder = JSONDecoder()
         do
         {
-            if(file == "Buckets2022")
+            if(file == "Bucket2022")
             {
                 let results = try decoder.decode([BucketListItem].self, from: data)
                 return results

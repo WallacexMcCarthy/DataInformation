@@ -12,6 +12,7 @@ struct DataView: View
     
     @ObservedObject var storedBuckets : BucketDataStore =
                                         BucketDataStore(buckets: loadJSON(from: "Bucket2022") as! [BucketListItem])
+    @ObservedObject var schoolStore = SchoolScoresDataStore(schoolData: loadJSON(from: "schoolScores") as! [SchoolScrores])
     
     var body: some View
     {
@@ -21,11 +22,21 @@ struct DataView: View
             {
                 Section(header: Text("Buckets"))
                 {
-                    
+                    ForEach(storedBuckets.buckets)
+                    {
+                        bucket in
+                        
+                        BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
+                    }
                 }
                 Section(header: Text("Custom"))
                 {
-                    
+                    ForEach(schoolStore.schoolData.indices, id: \.self)
+                    {
+                        index in
+                        let currentSchool = schoolStore.schoolData[index]
+                        SchoolScoresRowView(rowSchoolScores: currentSchool)
+                    }
                 }
                 Section(header: Text("Project Data"))
                 {

@@ -16,14 +16,18 @@ struct SchoolScoresDetailView: View
         VStack
         {
             Text("School Scores Item Detail")
+                .padding()
             HStack
             {
-                Text("State:\n\(detailedSchoolScores.State)")
-                    .padding()
-                    .accessibilityLabel("School Scores Item Title")
-                    .accessibilityValue("School Scores Item Detail")
-                VStack
+//                Text("State:\n\(detailedSchoolScores.State)")
+//                    .padding()
+//                    .accessibilityLabel("School Scores Item Title")
+//                    .accessibilityValue("School Scores Item Detail")
+                Form
                 {
+                    Text("State:\(detailedSchoolScores.State)")
+                        .accessibilityLabel("School Scores Item Title")
+                        .accessibilityValue("School Scores Item Detail")
                     Text("Total Test Takers: \(detailedSchoolScores.totalTestTakers)")
                         .accessibilityLabel("Total Test Takers")
                         .accessibilityValue("Total Test Takers: \(detailedSchoolScores.totalTestTakers)")
