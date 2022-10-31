@@ -45,6 +45,10 @@ struct DataView: View
             }
         }
     }
+    private func removeBucketItems(at offsets : IndexSet) -> Void
+    {
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider
