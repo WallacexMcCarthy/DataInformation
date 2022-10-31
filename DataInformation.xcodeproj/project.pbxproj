@@ -23,6 +23,8 @@
 		94435B9E290836910037B43B /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94435B9D290836910037B43B /* BucketDataStore.swift */; };
 		94435BA229083D250037B43B /* schoolScores.json in Resources */ = {isa = PBXBuildFile; fileRef = 94435BA129083D250037B43B /* schoolScores.json */; };
 		94435BA429083DA90037B43B /* Bucket2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 94435BA329083DA80037B43B /* Bucket2022.json */; };
+		9448F59029101B6B00915C90 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448F58F29101B6B00915C90 /* InputField.swift */; };
+		9448F59229101E9600915C90 /* AddBucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448F59129101E9600915C90 /* AddBucketListItemView.swift */; };
 		945679172900509700F06CBD /* SchoolScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945679162900509700F06CBD /* SchoolScores.swift */; };
 		949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E097D28FD95AD00BC3C34 /* Utilities.swift */; };
 		94D36D89290ADAD30085D687 /* SchoolScoresDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D36D88290ADAD30085D687 /* SchoolScoresDataStore.swift */; };
@@ -66,6 +68,8 @@
 		94435B9D290836910037B43B /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
 		94435BA129083D250037B43B /* schoolScores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schoolScores.json; sourceTree = "<group>"; };
 		94435BA329083DA80037B43B /* Bucket2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bucket2022.json; sourceTree = "<group>"; };
+		9448F58F29101B6B00915C90 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		9448F59129101E9600915C90 /* AddBucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketListItemView.swift; sourceTree = "<group>"; };
 		945679162900509700F06CBD /* SchoolScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScores.swift; sourceTree = "<group>"; };
 		949E097D28FD95AD00BC3C34 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		94D36D88290ADAD30085D687 /* SchoolScoresDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScoresDataStore.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		940458DB28F868A80046625F /* BucketViews */ = {
 			isa = PBXGroup;
 			children = (
+				9448F59129101E9600915C90 /* AddBucketListItemView.swift */,
 				940458DD28F868F80046625F /* BucketRowView.swift */,
 				940458DF28F869330046625F /* BucketDetailView.swift */,
 			);
@@ -133,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				940458E128F869CA0046625F /* CustomPDFView.swift */,
+				9448F58F29101B6B00915C90 /* InputField.swift */,
 			);
 			path = InformationViews;
 			sourceTree = "<group>";
@@ -354,6 +360,8 @@
 				949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */,
 				941497B228F5A8760034B090 /* DataInformationApp.swift in Sources */,
 				945679172900509700F06CBD /* SchoolScores.swift in Sources */,
+				9448F59229101E9600915C90 /* AddBucketListItemView.swift in Sources */,
+				9448F59029101B6B00915C90 /* InputField.swift in Sources */,
 				940458D928F867670046625F /* BucketList.swift in Sources */,
 				940458DE28F868F80046625F /* BucketRowView.swift in Sources */,
 				940458E028F869330046625F /* BucketDetailView.swift in Sources */,

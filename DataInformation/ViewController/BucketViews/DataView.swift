@@ -38,6 +38,7 @@ struct DataView: View
                         let currentSchool = schoolStore.schoolData[index]
                         SchoolScoresRowView(rowSchoolScores: currentSchool)
                     }
+                    .onDelete(perform: removeSchoolScoresItem(at:))
                 }
                 Section(header: Text("Project Data"))
                 {
@@ -49,6 +50,10 @@ struct DataView: View
     private func removeBucketItems(at offsets : IndexSet) -> Void
     {
         storedBuckets.buckets.remove(atOffsets: offsets)
+    }
+    private func removeSchoolScoresItem(at offset : IndexSet) -> Void
+    {
+        schoolStore.schoolData.remove(atOffsets: offset)
     }
 }
 

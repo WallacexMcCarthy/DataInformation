@@ -17,7 +17,7 @@ class BucketDataStore: ObservableObject
             let encoder = JSONEncoder()
             if let encodedBuckets = try? encoder.encode(buckets) // try? means that if this codoe has an error then you will get a null not an error.
             {
-                UserDefaults.standard.set(encodedBuckets, forKey: "Saved Bucets")
+                UserDefaults.standard.set(encodedBuckets, forKey: "Saved Buckets")
             }
         }
     }
