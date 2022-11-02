@@ -12,6 +12,7 @@ struct DataView: View
     
     @EnvironmentObject var storedBuckets : BucketDataStore
     @ObservedObject var schoolStore = SchoolScoresDataStore(schoolData: loadJSON(from: "schoolScores") as! [SchoolScrores])
+    @State private var showAddBucketListItem : Bool = false
     
     var body: some View
     {
@@ -47,6 +48,25 @@ struct DataView: View
                     }
             }
             }
+            .navigationTitle("Data and Information")
+            .toolbar
+            {
+                ToolbarItem(placement: .navigationBarLeading)
+                {
+                    EditButton()
+                }
+                ToolbarItem(placement: .navigationBarTrailing)
+                {
+                    Button(action: {self.showAddBucketListItem.toggle()} )
+                    {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showAddBucketListItem)
+        {
+            AddBucketListItemView()
         }
     }
     private func removeBucketItems(at offsets : IndexSet) -> Void

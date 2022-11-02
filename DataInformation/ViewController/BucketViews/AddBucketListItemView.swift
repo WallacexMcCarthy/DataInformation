@@ -19,7 +19,7 @@ struct AddBucketListItemView: View
     {
         Form
         {
-            Section(header: Text("Make a new Bucjet List Item")
+            Section(header: Text("Make a new Bucket List Item")
                 .font(.largeTitle)
                 .foregroundColor(.purple)
                 .multilineTextAlignment(.center))
@@ -29,7 +29,7 @@ struct AddBucketListItemView: View
             }
             if (!author.isEmpty && !bucketListItem.isEmpty)
             {
-                Button("", action:addBucketItemToDataStore)
+                Button("Create Item", action:addBucketItemToDataStore)
                     .padding(.horizontal, 50)
             }
             
