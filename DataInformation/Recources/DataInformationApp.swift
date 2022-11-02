@@ -10,11 +10,14 @@ import SwiftUI
 @main
 struct DataInformationApp: App
 {
+    @StateObject private var storedBuckets : BucketDataStore =
+    BucketDataStore(buckets: loadJSON(from: "Bucket2022") as! [BucketListItem])
     var body: some Scene
     {
         WindowGroup
         {
             DataView()
+                .environmentObject(storedBuckets)
         }
     }
 }

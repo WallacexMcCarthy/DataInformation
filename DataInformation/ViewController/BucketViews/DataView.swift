@@ -10,40 +10,42 @@ import SwiftUI
 struct DataView: View
 {
     
-    @ObservedObject var storedBuckets : BucketDataStore =
-                                        BucketDataStore(buckets: loadJSON(from: "Bucket2022") as! [BucketListItem])
+    @EnvironmentObject var storedBuckets : BucketDataStore
     @ObservedObject var schoolStore = SchoolScoresDataStore(schoolData: loadJSON(from: "schoolScores") as! [SchoolScrores])
     
     var body: some View
     {
         NavigationView
         {
-            Form
+            VStack
             {
-                Section(header: Text("Buckets"))
+                List
                 {
-                    ForEach(storedBuckets.buckets)
+                    Section(header: Text("Buckets"))
                     {
-                        bucket in
+                        ForEach(storedBuckets.buckets)
+                        {
+                            bucket in
+                            
+                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
+                        }
+                        .onDelete(perform: removeBucketItems)
+                    }
+                    Section(header: Text("Custom"))
+                    {
+                        ForEach(schoolStore.schoolData.indices, id: \.self)
+                        {
+                            index in
+                            let currentSchool = schoolStore.schoolData[index]
+                            SchoolScoresRowView(rowSchoolScores: currentSchool)
+                        }
+                        .onDelete(perform: removeSchoolScoresItem(at:))
+                    }
+                    Section(header: Text("Project Data"))
+                    {
                         
-                        BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
                     }
-                    .onDelete(perform: removeBucketItems)
-                }
-                Section(header: Text("Custom"))
-                {
-                    ForEach(schoolStore.schoolData.indices, id: \.self)
-                    {
-                        index in
-                        let currentSchool = schoolStore.schoolData[index]
-                        SchoolScoresRowView(rowSchoolScores: currentSchool)
-                    }
-                    .onDelete(perform: removeSchoolScoresItem(at:))
-                }
-                Section(header: Text("Project Data"))
-                {
-                    
-                }
+            }
             }
         }
     }
@@ -62,5 +64,6 @@ struct ContentView_Previews: PreviewProvider
     static var previews: some View
     {
         DataView()
+            .environmentObject(BucketDataStore(buckets: loadJSON(from: "Bucket2022") as! [BucketListItem]))
     }
 }

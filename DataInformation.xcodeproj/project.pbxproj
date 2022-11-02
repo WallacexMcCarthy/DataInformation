@@ -29,6 +29,8 @@
 		949E097E28FD95AD00BC3C34 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E097D28FD95AD00BC3C34 /* Utilities.swift */; };
 		94D36D89290ADAD30085D687 /* SchoolScoresDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D36D88290ADAD30085D687 /* SchoolScoresDataStore.swift */; };
 		94D9D89428F8637000904C0F /* school_scores.json in Resources */ = {isa = PBXBuildFile; fileRef = 94D9D89328F8637000904C0F /* school_scores.json */; };
+		94E7CF382912AB7C0084B5B5 /* dataCollection.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 94E7CF372912AB7C0084B5B5 /* dataCollection.pdf */; };
+		94E7CF3A2912B2220084B5B5 /* randoness.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 94E7CF392912B2220084B5B5 /* randoness.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		949E097D28FD95AD00BC3C34 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		94D36D88290ADAD30085D687 /* SchoolScoresDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScoresDataStore.swift; sourceTree = "<group>"; };
 		94D9D89328F8637000904C0F /* school_scores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_scores.json; sourceTree = "<group>"; };
+		94E7CF372912AB7C0084B5B5 /* dataCollection.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dataCollection.pdf; sourceTree = "<group>"; };
+		94E7CF392912B2220084B5B5 /* randoness.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = randoness.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 		941497DB28F5A8850034B090 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
+				94E7CF392912B2220084B5B5 /* randoness.pdf */,
+				94E7CF372912AB7C0084B5B5 /* dataCollection.pdf */,
 				94D9D88628F8573E00904C0F /* Data */,
 				941497B128F5A8760034B090 /* DataInformationApp.swift */,
 				941497B528F5A8770034B090 /* Assets.xcassets */,
@@ -326,8 +332,10 @@
 			files = (
 				94D9D89428F8637000904C0F /* school_scores.json in Resources */,
 				94435BA429083DA90037B43B /* Bucket2022.json in Resources */,
+				94E7CF382912AB7C0084B5B5 /* dataCollection.pdf in Resources */,
 				94435BA229083D250037B43B /* schoolScores.json in Resources */,
 				941497B928F5A8770034B090 /* Preview Assets.xcassets in Resources */,
+				94E7CF3A2912B2220084B5B5 /* randoness.pdf in Resources */,
 				941497B628F5A8770034B090 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

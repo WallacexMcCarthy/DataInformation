@@ -11,9 +11,10 @@ import PDFKit
 
 struct CustomPDFView: View
 {
+    let documentURL : URL
     var body: some View
     {
-        Text("placeholder")
+        PDFKitRepresentedView(documentURL: documentURL)
     }
 }
 struct PDFKitRepresentedView : UIViewRepresentable
@@ -46,6 +47,6 @@ struct PDFKitRepresentedView : UIViewRepresentable
 
 struct CustomPDFView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomPDFView()
+        CustomPDFView(documentURL: randomInfoURL)
     }
 }
