@@ -14,6 +14,24 @@ struct DataView: View
     @ObservedObject var schoolStore = SchoolScoresDataStore(schoolData: loadJSON(from: "schoolScores") as! [SchoolScrores])
     @State private var showAddBucketListItem : Bool = false
     
+    @State private var searchedText : String = ""
+    
+    private var filteredBucketListResults : [BucketListItem]
+    {
+        if(searchedText.isEmpty)
+        {
+            return storedBuckets.buckets
+        }
+        else
+        {
+            return storedBuckets.buckets.filter
+            {
+                $0.goal.lowercased().contains(searchedText.lowercased()) ||
+                $0.creature.lowercased().contains(searchedText.lowercased())
+            }
+        }
+    }
+    
     var body: some View
     {
         NavigationView
