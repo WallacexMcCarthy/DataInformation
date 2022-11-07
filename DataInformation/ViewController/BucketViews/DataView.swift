@@ -27,7 +27,8 @@ struct DataView: View
             return storedBuckets.buckets.filter
             {
                 $0.goal.lowercased().contains(searchedText.lowercased()) ||
-                $0.creature.lowercased().contains(searchedText.lowercased())
+                $0.creature.lowercased().contains(searchedText.lowercased()) ||
+                String ($0.year) == searchedText
             }
         }
     }
@@ -42,11 +43,11 @@ struct DataView: View
                 {
                     Section(header: Text("Buckets"))
                     {
-                        ForEach(storedBuckets.buckets)
+                        ForEach(filteredBucketListResults)
                         {
                             bucket in
                             
-                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
+                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "face"))
                         }
                         .onDelete(perform: removeBucketItems)
                     }
@@ -66,6 +67,7 @@ struct DataView: View
                     }
             }
             }
+            .searchable(text: $searchedText)
             .navigationTitle("Data and Information")
             .toolbar
             {
