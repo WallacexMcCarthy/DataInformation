@@ -14,8 +14,8 @@ let demoSchoolScores : SchoolScrores = SchoolScrores(State: "Utah", totalTestTak
 
 
 //MARK: - Internal URLS for files
-let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
-let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
+let randomInfoURL = Bundle.main.url(forResource: "randoness", withExtension: "pdf")!
+let dataViolationsURL = Bundle.main.url(forResource: "dataCollection", withExtension: "pdf")!
 
 
 //MARK: - Helper Methods for Random Strings
@@ -81,7 +81,7 @@ func loadJSON (from file: String) -> [Any]
             {
                 let results = try decoder.decode([BucketListItem].self, from: data)
                 return results
-            }else if (file == "schoolScores (1)")
+            }else if (file == "schoolScores")
             {
                 let results = try decoder.decode([SchoolScrores].self, from: data)
                 return results

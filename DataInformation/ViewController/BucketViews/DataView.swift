@@ -51,7 +51,7 @@ struct DataView: View
                         }
                         .onDelete(perform: removeBucketItems)
                     }
-                    Section(header: Text("Custom"))
+                    Section(header: Text("School Scores"))
                     {
                         ForEach(schoolStore.schoolData.indices, id: \.self)
                         {
@@ -63,7 +63,8 @@ struct DataView: View
                     }
                     Section(header: Text("Project Data"))
                     {
-                        
+                        NavigationLink("Randoness", destination: CustomPDFView(displayedPDFURL: randomInfoURL))
+                        NavigationLink("Data Collections", destination: CustomPDFView(displayedPDFURL: dataViolationsURL))
                     }
             }
             }
