@@ -11,9 +11,11 @@ import PDFKit
 
 struct CustomPDFView: View
 {
+//    let title : String
     let displayedPDFURL : URL
     var body: some View
     {
+//        Text("\(title)")
         PDFKitRepresentedView(documentURL: displayedPDFURL)
             .accessibilityLabel("PDF from: \(displayedPDFURL)")
             .accessibilityValue("PDF of: \(displayedPDFURL)")
